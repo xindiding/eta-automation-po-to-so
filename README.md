@@ -1,5 +1,9 @@
 # eta-automation-po-to-so
-Automates allocation of Purchase Orders to Sales Orders with ETA logic, status updates, and customer notifications.
+
+**Portfolio Summary**
+
+This project is an anonymised demo of a real-world operations automation that links open Purchase Orders to open Sales Orders to manage ETA allocation and customer communication in retail and e-commerce environments. It focuses on rule-based matching, ETA extraction from unstructured PO notes, and allocation of ETAs to SO line items with robust handling of edge cases such as missing ETAs, partial fulfilment, and conflicting signals. The automation updates SO notes and top-level ETAs when eligible, logs exceptions for auditability, and triggers customer notifications when ETA changes occur. The emphasis of this project is on business logic design, edge-case handling, and system reliability rather than UI or visualisation, with all integrations and data fully anonymised for demonstration purposes.
+
 
 ## Business Problem
 In retail and e-commerce operations, Purchase Orders (POs) and Sales Orders (SOs) are often managed in separate systems.
@@ -12,9 +16,9 @@ This project automates the process of linking open Purchase Orders to open Sales
 ## What This Project Does
 - Automatically matches open POs to open SOs using SKU and date logic
 - Allocates ETAs from PO lines to corresponding SOs
-- Updates order notes and statuses in downstream systems
+- Updates order notes and ETAs in downstream systems
 - Triggers customer notifications when ETAs change
-- Handles edge cases such as missing ETAs, partial allocations, and multiple suppliers
+- Handles edge cases such as missing ETAs, partial allocations, and multiple PO sources
 
 ---
 
@@ -33,7 +37,7 @@ This automation reduces manual intervention, improves customer communication, an
 1. Retrieve open Purchase Orders and Sales Orders
 2. Apply matching rules (SKU, creation date, availability)
 3. Allocate ETA from PO to SO
-4. Update SO notes and status
+4. Update SO line notes and top-level ETA (when eligible)
 5. Log changes and exceptions for auditing
 
 ---
@@ -42,13 +46,15 @@ This automation reduces manual intervention, improves customer communication, an
 - Business rules are prioritised over perfect matching to reflect real operational constraints
 - Edge cases are logged instead of failing the entire process
 - The system is designed to be extendable for new rules and suppliers
+- The focus of this project is rule design, edge-case handling, and system logic rather than UI or visualisation.
+
 
 ---
 
 ## Tech Stack
 - Python
 - Pandas
-- API integrations (structure anonymised)
+- API integrations
 - Logging & rule-based processing
 
 ---

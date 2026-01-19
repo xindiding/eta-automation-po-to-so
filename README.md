@@ -3,7 +3,7 @@ Automates allocation of Purchase Orders to Sales Orders with ETA logic, status u
 
 ## Business Problem
 In retail and e-commerce operations, Purchase Orders (POs) and Sales Orders (SOs) are often managed in separate systems.
-This creates manual work, delays, and inconsistencies when allocating incoming stock, updating ETAs, and informing customers.
+This creates manual work, delays, and inconsistencies when allocating updating ETAs and informing customers.
 
 This project automates the process of linking open Purchase Orders to open Sales Orders based on business rules, improving operational efficiency and data accuracy.
 

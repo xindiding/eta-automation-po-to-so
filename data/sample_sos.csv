@@ -1,0 +1,4 @@
+so_id,so_created_date,email,sku,qty,holding_qty,line_note
+SO9001,2025-12-02,test@example.com,ABC,4,0,
+SO9002,2025-12-03,test@example.com,ABC,3,1,
+SO9003,2025-12-08,test@example.com,XYZ,2,0,

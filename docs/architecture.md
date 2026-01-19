@@ -1,1 +1,1 @@
-High-level architecture diagram will be added here.
+Architecture notes will go here.

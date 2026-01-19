@@ -1,13 +1,13 @@
 # eta-automation-po-to-so
 
-**Portfolio Summary**
+## Portfolio Summary
 
 This project is an anonymised demo of a real-world operations automation that links open Purchase Orders to open Sales Orders to manage ETA allocation and customer communication in retail and e-commerce environments. It focuses on rule-based matching, ETA extraction from unstructured PO notes, and allocation of ETAs to SO line items with robust handling of edge cases such as missing ETAs, partial fulfilment, and conflicting signals. The automation updates SO notes and top-level ETAs when eligible, logs exceptions for auditability, and triggers customer notifications when ETA changes occur. The emphasis of this project is on business logic design, edge-case handling, and system reliability rather than UI or visualisation, with all integrations and data fully anonymised for demonstration purposes.
 
 
 ## Business Problem
 In retail and e-commerce operations, Purchase Orders (POs) and Sales Orders (SOs) are often managed in separate systems.
-This creates manual work, delays, and inconsistencies when allocating ETAs, updating ETAs and informing customers.
+This creates manual work, delays, and inconsistencies when allocating and updating ETAs, as well as informing customers.
 
 This project automates the process of linking open Purchase Orders to open Sales Orders based on business rules, improving operational efficiency and data accuracy.
 
